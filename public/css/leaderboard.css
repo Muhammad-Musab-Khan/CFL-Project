@@ -1,0 +1,117 @@
+/* leaderboard.css */
+
+/* Body and container styles */
+body {
+    background-color: #f3f6fa;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.container {
+    margin-top: 30px;
+    padding: 20px;
+    max-width: 1000px;
+}
+
+/* Navbar styling */
+.navbar {
+    border-bottom: 3px solid #007bff;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #fff !important;
+}
+
+.nav-link {
+    color: #f8f9fa !important;
+    margin-left: 15px;
+}
+
+.navbar-nav .nav-item:hover .nav-link {
+    color: #d1ecf1 !important;
+}
+
+/* Header styling */
+h2 {
+    color: #0056b3;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Search bar styling */
+#searchInput {
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+    padding: 10px;
+}
+
+/* Leaderboard table styling */
+.table {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.table thead th {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    border-top: none;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.table tbody td {
+    text-align: center;
+    padding: 15px;
+    font-size: 15px;
+}
+
+.table tbody tr:hover {
+    background-color: #e2e6ea;
+}
+
+.table tbody tr td:first-child {
+    font-weight: bold;
+}
+
+/* Styling for player rank and score */
+.table tbody td {
+    color: #555;
+}
+
+/* Custom scrollbar for the table */
+.table-responsive {
+    overflow-y: auto;
+    max-height: 500px;
+    border-radius: 8px;
+}
+
+.table-responsive::-webkit-scrollbar {
+    width: 8px;
+}
+
+.table-responsive::-webkit-scrollbar-thumb {
+    background-color: #007bff;
+    border-radius: 4px;
+}
+
+.table-responsive::-webkit-scrollbar-track {
+    background-color: #e9ecef;
+}
+
+/* Button styling */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}

@@ -1,0 +1,168 @@
+/* General Body Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+  color: #343a40;
+  line-height: 1.6;
+}
+
+/* Hero Section Styles */
+.hero-section {
+  background-image: url('https://example.com/your-background-image.jpg'); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  padding: 120px 0; /* Increased padding for a more spacious feel */
+  text-align: center;
+  position: relative;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for better text contrast */
+  z-index: 1;
+}
+
+.hero-section h1 {
+  font-size: 4rem; /* Larger font size for better visibility */
+  font-weight: bold;
+  margin-bottom: 20px;
+  z-index: 2;
+  position: relative; /* Position relative to stack above the overlay */
+}
+
+.hero-section p.lead {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  z-index: 2;
+  position: relative;
+}
+
+.hero-section .btn-primary {
+  background-color: #007bff;
+  border: none;
+  padding: 12px 30px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s;
+  box-shadow: 0 4px 20px rgba(0, 123, 255, 0.4); /* Add subtle shadow */
+}
+
+.hero-section .btn-primary:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+  box-shadow: 0 6px 30px rgba(0, 86, 179, 0.5); /* Enhance shadow on hover */
+}
+
+/* Features Section Styles */
+.features {
+  padding: 60px 0;
+  background-color: #ffffff; /* Add background color for contrast */
+  border-top: 1px solid #dee2e6; /* Subtle top border */
+}
+
+.features h2 {
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* How It Works Section Styles */
+.how-it-works {
+  padding: 60px 0;
+  background-color: #f7f7f7; /* Light background for contrast */
+}
+
+.how-it-works ol {
+  padding-left: 20px;
+  font-size: 1.2rem;
+}
+
+/* Testimonials Section Styles */
+.testimonials {
+  padding: 60px 0;
+  background-color: #ffffff; /* Add background color for contrast */
+}
+
+blockquote {
+  background: #f8f9fa;
+  padding: 20px;
+  border-left: 5px solid #007bff;
+  border-radius: 5px;
+  transition: transform 0.3s;
+  position: relative;
+}
+
+blockquote:hover {
+  transform: translateY(-5px);
+}
+
+/* Footer Styles */
+footer {
+  background-color: #343a40;
+  color: white;
+  padding: 20px 0;
+}
+
+footer a {
+  color: white;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: #007bff;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .hero-section h1 {
+      font-size: 2.5rem;
+  }
+
+  .hero-section p.lead {
+      font-size: 1.2rem;
+  }
+
+  .features h2 {
+      font-size: 2rem;
+  }
+
+  .testimonials .blockquote {
+      font-size: 1rem; /* Adjusting blockquote font size for mobile */
+  }
+}
+
+/* Additional Styles for Spacing and Structure */
+.container {
+  max-width: 1200px; /* Maintain a consistent container width */
+}
+
+/* Card Image Styling */
+.card img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 100%;
+  height: auto;
+}
+
+/* Custom Scrollbar */
+html {
+  scroll-behavior: smooth; /* Smooth scrolling */
+}
+
